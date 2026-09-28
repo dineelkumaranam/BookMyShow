@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieBook - Movie Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Movie<span>Book</span></div>
+    <div class="search">🔎 <input id="search" placeholder="Search for movies"></div>
+    <button class="city">📍 Tirupati</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">BOOK MOVIES • EVENTS • EXPERIENCES</p>
+        <h1>Movies made easy.</h1>
+        <p>Choose a movie, pick your seats, and get your tickets in seconds.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Recommended Movies</h2>
+        <span id="movieCount"></span>
+      </div>
+      <div id="movies" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <div id="bookingModal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div id="bookingStep"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
